@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Quiz Hero | Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="./index.js" defer></script> -->
+
+    <!-- You don't need to change noChange.js file. It's fine -->
+    <script src="./noChange.js" defer></script>
+    <!-- You don't need to change noChange.js file. It's fine -->
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        common: ["Rubik", "sans-serif"],
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body class="bg-white font-common">
+    <header class="h-16 flex items-center shadow-sm">
+        <nav class="flex justify-between items-center w-9/12 mx-auto">
+            <div class="text-zinc-800 font-bold uppercase">
+                <h1 class="text-lg">Quiz <span class="text-green-700">Blog</span></h1>
+                <p class="text-[10px] font-normal capitalize -mt-1">
+                    Get ready to Quiz and be amazed!
+                </p>
+            </div>
+            <a href="/index.html" class="bg-green-600 font-light text-sm px-5 py-1 rounded text-white">
+                Exam
+            </a>
+        </nav>
+    </header>
+    <!-- main section -->
+    <main>
+        <section class="lg:w-9/12 md:w-[90%] w-[95%] mx-auto">
+            <article class="space-y-5 border-b-2 pb-5">
+                <h2 class="text-xl font-bold"><span class="text-red-500">Q1 :</span> What is JavaScript and how is it
+                    used in web development?</h2>
+                <p class="text-justify"><span class="text-green-500">Answer :</span> JavaScript is a versatile
+                    programming language primarily used for creating dynamic and interactive content on websites. It
+                    allows developers to manipulate web pages in real-time, handle events, and perform asynchronous
+                    operations, enhancing the user experience.</p>
+            </article>
+            <article class="space-y-5 border-b-2 pb-5">
+                <h2 class="text-xl font-bold"><span class="text-red-500">Q2 :</span> What are closures in JavaScript?
+                </h2>
+                <p class="text-justify"><span class="text-green-500">Answer :</span> Closures are functions that retain
+                    access to their lexical scope even when the function is executed outside that scope. They are useful
+                    for creating private variables and functions, ensuring data encapsulation.</p>
+            </article>
+            <article class="space-y-5 border-b-2 pb-5">
+                <h2 class="text-xl font-bold"><span class="text-red-500">Q3 :</span> What is the difference between let,
+                    const, and var in JavaScript?</h2>
+                <p class="text-justify"><span class="text-green-500">Answer :</span> `var` is function-scoped, `let` is
+                    block-scoped, and `const` is block-scoped with an immutable binding. `let` and `const` provide
+                    better scoping rules and help prevent common bugs associated with `var`.</p>
+            </article>
+            <article class="space-y-5 border-b-2 pb-5">
+                <h2 class="text-xl font-bold"><span class="text-red-500">Q4 :</span> What is the event loop in
+                    JavaScript?</h2>
+                <p class="text-justify"><span class="text-green-500">Answer :</span> The event loop is a mechanism that
+                    allows JavaScript to perform non-blocking operations by offloading tasks to the browser, then
+                    running the tasks in the queue once the main stack is empty. This ensures efficient handling of
+                    asynchronous operations.</p>
+            </article>
+            <article class="space-y-5 border-b-2 pb-5">
+                <h2 class="text-xl font-bold"><span class="text-red-500">Q5 :</span> How does prototypal inheritance
+                    work in JavaScript?</h2>
+                <p class="text-justify"><span class="text-green-500">Answer :</span> Prototypal inheritance allows
+                    objects to inherit properties and methods from other objects. Each object has a prototype, which is
+                    a reference to another object, enabling shared properties and methods across instances.</p>
+            </article>
+        </section>
+
+
+    </main>
+</body>
+
+</html>
